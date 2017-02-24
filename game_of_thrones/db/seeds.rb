@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-House.destroy
-Character.destroy
+House.destroy_all
+Character.destroy_all
 
 stark = House.create!(name: "House Stark", words: "Winter is Coming", seat: "Winterfell", realm: "The North", crest_url: "http://vignette4.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest?cb=20170101103142")
 
@@ -30,4 +30,4 @@ robb = Character.create!(name: "Robb Stark", photo_url: "http://vignette2.wikia.
 
 brynden = Character.create!(name: "Brynden Tully", photo_url: "http://vignette2.wikia.nocookie.net/gameofthrones/images/6/61/6x07_Blackfish.png/revision/latest?cb=20160601191023", bio: "Brynden Tully is the younger brother of Hoster Tully, Lord of Riverrun and head of House Tully, and the uncle of Catelyn Stark, Edmure Tully, and Lysa Arryn. Brynden is a respected knight and formidable battle commander, who first distinguished himself in the War of the Ninepenny Kings, nearly forty years before the War of the Five Kings.", house_id: tully.id)
 
-daenerys = Character.create!(name: "Daenerys Targaryen", photo_url: "http://vignette4.wikia.nocookie.net/gameofthrones/images/8/88/Daenerys-0.jpg/revision/latest?cb=20170106122450", bio: "Daenerys is the only daughter and youngest child of King Aerys II Targaryen, the "Mad King", and his sister-wife, Rhaella. Her father died during the Sack of King's Landing, before she was even born. The usurper Robert Baratheon installed himself as king, having defeated Aerys in the conquest known as Robert's Rebellion. Her pregnant mother and brother Viserys, fled to the island of Dragonstone, the ancestral home of House Targaryen, to escape Robert.", house_id: targaryen.id)
+daenerys = Character.create!(name: "Daenerys Targaryen", photo_url: "http://vignette4.wikia.nocookie.net/gameofthrones/images/8/88/Daenerys-0.jpg/revision/latest?cb=20170106122450", bio: "Daenerys is the only daughter and youngest child of King Aerys II Targaryen, the 'Mad King', and his sister-wife, Rhaella. Her father died during the Sack of King's Landing, before she was even born. The usurper Robert Baratheon installed himself as king, having defeated Aerys in the conquest known as Robert's Rebellion. Her pregnant mother and brother Viserys, fled to the island of Dragonstone, the ancestral home of House Targaryen, to escape Robert.", house_id: targaryen.id)
