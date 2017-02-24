@@ -1,0 +1,34 @@
+<h1> <%= @house.name %> </h1>
+
+<p><img class="crests" src="<%= @house.crest_url %>"></p>
+
+<article>
+<p>
+  <h2>Words:</h2>
+  <%= @house.words %>
+</p>
+<p>
+  <h2>Seat:</h2>
+  <%= @house.seat %>
+</p>
+<p>
+  <h2>Realm:</h2>
+  <%= @house.realm %>
+</p>
+<p>
+  <%= link_to "Edit House", edit_house_path(@house) %> |
+  <%= link_to "Delete House", house_path(@house), method: :delete %>
+</p>
+
+</article>
+<hr>
+<p>
+  <h3> House Members </h3>
+</p>
+<p>
+<% @house.characters.each do |character| %>
+
+<p> <%= link_to "#{character.name}", house_character_path(character) %> </p>
+
+<% end %>
+</p>
