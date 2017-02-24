@@ -5,15 +5,15 @@
 <article>
 <p>
   <h2>Words:</h2>
-  <%= @house.words %>
+  <div class="text"> <%= @house.words %> </div>
 </p>
 <p>
   <h2>Seat:</h2>
-  <%= @house.seat %>
+  <div class="text"> <%= @house.seat %> </div>
 </p>
 <p>
   <h2>Realm:</h2>
-  <%= @house.realm %>
+  <div class="text"> <%= @house.realm %> </div>
 </p>
 <p>
   <%= link_to "Edit House", edit_house_path(@house) %> |
@@ -23,12 +23,14 @@
 </article>
 <hr>
 <p>
-  <h3> House Members </h3>
+  <div class="text"> <h3> House Members </h3> </div>
 </p>
 <p>
 <% @house.characters.each do |character| %>
 
-<p> <%= link_to "#{character.name}", house_character_path(character) %> </p>
+<p> <%= link_to "#{character.name}", house_character_path(@house, character) %> </p>
 
 <% end %>
 </p>
+
+<p><%= link_to "Add a New Character", new_house_character_path(@house) %></p>

@@ -2,6 +2,7 @@
 
 <%= link_to "Add a new house", new_house_path %>
 
+<div class="house_list">
 <% @houses.each do |house| %>
 <article>
 
@@ -12,3 +13,5 @@
 </article>
 
 <% end %>
+
+</div>
