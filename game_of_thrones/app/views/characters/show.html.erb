@@ -1,15 +1,19 @@
-<h1>House <%= House.find(@character.house_id).name %></h1>
+<h1><a href="/houses/<%= @character.house_id %>">House <%= House.find(@character.house_id).name %></a></h1>
 
 <h2><%= @character.name %></h2>
 
 <div class="character">
-  <p><%= image_tag @character.photo_url %></p>
+
+    <%= image_tag @character.photo_url %>
+
   <p>
     <h3>Biography:</h3>
     <div class="text">
       <%= @character.bio %>
     </div>
   </p>
+
+
 
   <button type="button">
     <%= link_to "Edit Character", edit_house_character_path(@house, @character) %>

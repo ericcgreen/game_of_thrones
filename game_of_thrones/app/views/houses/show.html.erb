@@ -23,16 +23,28 @@
 </div>
 
 <hr>
-<p>
-  <div class="text"> <h3> House Members </h3> </div>
-</p>
-<p>
+
+
+  <h2> House Members </h2>
+
+
+<div class="house_members">
+
+
 <% @house.characters.each do |character| %>
-
-<p> <%= link_to "#{character.name}", house_character_path(@house, character) %> </p>
-
-<% end %>
+<article>
+<p>
+<%= link_to "#{character.name}", house_character_path(@house, character) %>
 </p>
+
+<p>
+<img class="photo" src="<%= character.photo_url %>">
+</p>
+</article>
+<% end %>
+
+
+</div>
 
 <p>
   <button type="button">

@@ -19,13 +19,8 @@
   src: url('game_of_thrones.ttf') format("truetype");
 }
 
-h1, h2, h3, p, .text {
+h1, h2, h3, p, .text, .character {
 text-align: center;
-}
-
-h2, h3 {
-  font-family: "thrones";
-  font-size: 20px;
 }
 
 h1 {
@@ -33,10 +28,11 @@ h1 {
   font-size: 25px;
 }
 
-.box {
-  display: block;
-  text-align: center;
+h2, h3 {
+  font-family: "thrones";
+  font-size: 20px;
 }
+
 p, .text {
  color: rgba(254, 253,	227, 1);
  font-size: 18px;
@@ -46,13 +42,15 @@ p, .text {
 .text {
   background-color: rgba(0, 0,	0, .3);
   width: auto;
-  max-width: 300px;
+  width: 400px;
   margin: auto;
   margin-bottom: 30px;
+  padding: 10px;
 }
 
 img {
   max-height: 225px;
+  max-width: 300px;
 }
 
 .logo {
@@ -61,6 +59,11 @@ img {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.box {
+  display: block;
+  text-align: center;
 }
 
 .house_list {
@@ -76,7 +79,7 @@ article {
   width: calc(100% * (1/4) - 10px - 1px)
 }
 
-body{
+body {
   background-image: url("https://zeitgeist.photo/asset/201502/zg.mg6c.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,7 +89,7 @@ body{
   text-align: center;
 }
 
-a {
+a, .submit {
   text-decoration: none;
   color: rgba(254,	253,	227,	 1);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -100,11 +103,18 @@ button, .submit {
   margin-right: auto;
 }
 
-.submit {
-  color: rgba(254,	253,	227,	 1);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.house_members {
+  display: flex;
+  justify-content: space-around;
 }
 
-.character {
-  text-align: center;
+textarea {
+  height: 100px;
+  width: 300px;
+}
+
+.photo {
+  height: 200px;
+  width: 150px;
+  border: 3px solid black;
 }
