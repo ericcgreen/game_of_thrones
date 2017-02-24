@@ -17,6 +17,10 @@ h1, h2, h3, p, .text {
 text-align: center;
 }
 
+p, .text {
+color: rgba(254,	253,	227,	 1);
+}
+
 img {
   max-height: 225px;
 }
@@ -25,6 +29,7 @@ img {
   height: 100px;
   width: 200px;
   display: block;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,4 +38,37 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+}
+
+article {
+  display: inline-block;
+  margin: 10px 0 0 2%;
+  flex-grow: 1;
+  width: calc(100% * (1/4) - 10px - 1px)
+}
+
+body{
+  background-image: url("https://zeitgeist.photo/asset/201502/zg.mg6c.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  padding: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(254,	253,	227,	 1);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+button, .submit {
+  background-color: black;
+  height: 25px;
+  width: 150px;
+}
+
+.submit {
+  color: rgba(254,	253,	227,	 1);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

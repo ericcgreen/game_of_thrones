@@ -2,7 +2,7 @@
 
 <p><img class="crests" src="<%= @house.crest_url %>"></p>
 
-<article>
+
 <p>
   <h2>Words:</h2>
   <div class="text"> <%= @house.words %> </div>
@@ -16,11 +16,15 @@
   <div class="text"> <%= @house.realm %> </div>
 </p>
 <p>
-  <%= link_to "Edit House", edit_house_path(@house) %> |
-  <%= link_to "Delete House", house_path(@house), method: :delete %>
+  <button type="button">
+    <%= link_to "Edit House", edit_house_path(@house) %>
+  </button> |
+  <button type="button">
+    <%= link_to "Delete House", house_path(@house), method: :delete %>
+  </button>
 </p>
 
-</article>
+
 <hr>
 <p>
   <div class="text"> <h3> House Members </h3> </div>
@@ -33,4 +37,8 @@
 <% end %>
 </p>
 
-<p><%= link_to "Add a New Character", new_house_character_path(@house) %></p>
+<p>
+  <button type="button">
+    <%= link_to "Add a New Character", new_house_character_path(@house) %>
+  </button>
+  </p>

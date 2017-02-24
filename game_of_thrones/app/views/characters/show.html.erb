@@ -6,10 +6,16 @@
   <p><%= image_tag @character.photo_url %></p>
   <p>
     <h3>Biography:</h3>
-    <%= @character.bio %>
+    <div class="text">
+      <%= @character.bio %>
+    </div>
   </p>
 
-  <%= link_to "Edit Character", edit_house_character_path(@house, @character) %> |
-  <%= link_to "Delete Character", house_character_path(@house, @character), method: :delete %>
+  <button type="button">
+    <%= link_to "Edit Character", edit_house_character_path(@house, @character) %>
+  </button> |
+  <button type="button">
+    <%= link_to "Delete Character", house_character_path(@house, @character), method: :delete %>
+  </button>
 
 </div>

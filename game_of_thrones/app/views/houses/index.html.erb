@@ -1,6 +1,8 @@
 <h1>The Great Houses of Westeros</h1>
 
-<%= link_to "Add a new house", new_house_path %>
+<button type="button">
+  <%= link_to "Add a new house", new_house_path %>
+</button>
 
 <div class="house_list">
 <% @houses.each do |house| %>
