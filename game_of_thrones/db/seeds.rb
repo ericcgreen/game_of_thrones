@@ -10,21 +10,21 @@
 House.destroy_all
 Character.destroy_all
 
-stark = House.create!(name: "House Stark", words: "Winter is Coming", seat: "Winterfell", realm: "The North", crest_url: "http://vignette4.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest?cb=20170101103142")
+stark = House.create!(name: "Stark", words: "Winter is Coming", seat: "Winterfell", realm: "The North", crest_url: "http://vignette4.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest?cb=20170101103142")
 
-lannister = House.create!(name: "House Lannister", words: "Hear Me Roar", seat: "Casterly Rock", realm: "The Westerlands", crest_url: "http://vignette3.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest?cb=20170101095357")
+lannister = House.create!(name: "Lannister", words: "Hear Me Roar", seat: "Casterly Rock", realm: "The Westerlands", crest_url: "http://vignette3.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest?cb=20170101095357")
 
-arryn = House.create!(name: "House Arryn", words: "As High as Honor", seat: "The Eyrie", realm: "The Vale of Arryn", crest_url: "http://vignette4.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG/revision/latest?cb=20170101094153")
+arryn = House.create!(name: "Arryn", words: "As High as Honor", seat: "The Eyrie", realm: "The Vale of Arryn", crest_url: "http://vignette4.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG/revision/latest?cb=20170101094153")
 
-greyjoy = House.create!(name: "House Greyjoy", words: "We Do Not Sow", seat: "Pyke", realm: "Iron Islands", crest_url: "http://vignette3.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG/revision/latest?cb=20160312122204")
+greyjoy = House.create!(name: "Greyjoy", words: "We Do Not Sow", seat: "Pyke", realm: "Iron Islands", crest_url: "http://vignette3.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG/revision/latest?cb=20160312122204")
 
-fray = House.create!(name: "House Fray", words: "We Stand Together", seat: "The Twins", realm: "The Riverlands", crest_url: "http://vignette1.wikia.nocookie.net/gameofthrones/images/e/e6/House-Frey-Main-Shield.PNG/revision/latest?cb=20160312124244")
+fray = House.create!(name: "Fray", words: "We Stand Together", seat: "The Twins", realm: "The Riverlands", crest_url: "http://vignette1.wikia.nocookie.net/gameofthrones/images/e/e6/House-Frey-Main-Shield.PNG/revision/latest?cb=20160312124244")
 
-tyrell = House.create!(name: "House Tyrell", words: "Growing Strong", seat: "Highgarden", realm: "The Reach", crest_url: "http://vignette2.wikia.nocookie.net/gameofthrones/images/c/cf/House-Tyrell-Main-Shield.PNG/revision/latest?cb=20170108163035")
+tyrell = House.create!(name: "Tyrell", words: "Growing Strong", seat: "Highgarden", realm: "The Reach", crest_url: "http://vignette2.wikia.nocookie.net/gameofthrones/images/c/cf/House-Tyrell-Main-Shield.PNG/revision/latest?cb=20170108163035")
 
-targaryen = House.create!(name: "House Targaryen", words: "Fire and Blood", seat: "Dragonstone", realm: "Bay of Dragons", crest_url: "http://vignette2.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest?cb=20161206005534")
+targaryen = House.create!(name: "Targaryen", words: "Fire and Blood", seat: "Dragonstone", realm: "Bay of Dragons", crest_url: "http://vignette2.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest?cb=20161206005534")
 
-tully = House.create!(name: "House Tully", words: "Family, Duty, Honor", seat: "Riverrun", realm: "The Riverlands", crest_url: "http://vignette3.wikia.nocookie.net/gameofthrones/images/b/bd/House-Tully-Main-Shield.PNG/revision/latest?cb=20160312103126")
+tully = House.create!(name: "Tully", words: "Family, Duty, Honor", seat: "Riverrun", realm: "The Riverlands", crest_url: "http://vignette3.wikia.nocookie.net/gameofthrones/images/b/bd/House-Tully-Main-Shield.PNG/revision/latest?cb=20160312103126")
 
 robb = Character.create!(name: "Robb Stark", photo_url: "http://vignette2.wikia.nocookie.net/gameofthrones/images/5/50/S3E9_Robb_Stark_main.jpg/revision/latest?cb=20160718071203", bio: "Robb was the eldest child of Lady Catelyn and Lord Eddard Stark. Eddard was the head of House Stark, Lord of Winterfell, and Lord Paramount of the North, one of the constituent regions of the Seven Kingdoms. The Starks rule the region from their seat of Winterfell. Eddard was also the Warden of the North to King Robert Baratheon. Robb was born at Riverrun and raised in Winterfell. His father left his mother the morning after their wedding to fight in Robert's Rebellion and did not return until after Robb was born. ", house_id: stark.id)
 

@@ -6,7 +6,7 @@
 <% @houses.each do |house| %>
 <article>
 
- <h2> <%= link_to "#{house.name}", house_path(house) %></h2>
+ <h2> <%= link_to "House #{house.name}", house_path(house) %></h2>
 
   <p> <img class="crests" src="<%= house.crest_url %>"></p>
 
