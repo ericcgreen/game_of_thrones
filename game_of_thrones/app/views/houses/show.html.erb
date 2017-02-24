@@ -2,28 +2,25 @@
 
 <p><img class="crests" src="<%= @house.crest_url %>"></p>
 
+<div class="box">
 
-<p>
   <h2>Words:</h2>
   <div class="text"> <%= @house.words %> </div>
-</p>
-<p>
+
   <h2>Seat:</h2>
   <div class="text"> <%= @house.seat %> </div>
-</p>
-<p>
+
   <h2>Realm:</h2>
   <div class="text"> <%= @house.realm %> </div>
-</p>
-<p>
+
   <button type="button">
     <%= link_to "Edit House", edit_house_path(@house) %>
   </button> |
   <button type="button">
     <%= link_to "Delete House", house_path(@house), method: :delete %>
   </button>
-</p>
 
+</div>
 
 <hr>
 <p>
